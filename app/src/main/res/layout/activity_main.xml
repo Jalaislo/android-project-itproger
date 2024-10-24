@@ -29,8 +29,10 @@
         android:layout_marginTop="35dp"
         android:ems="10"
         android:hint="@string/hint1"
+        android:textColorHint="@color/hint"
         android:inputType="numberDecimal"
         android:minHeight="48dp"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/resultText" />
@@ -42,8 +44,10 @@
         android:layout_marginTop="15dp"
         android:ems="10"
         android:hint="@string/hint1"
+        android:textColorHint="@color/hint"
         android:inputType="numberDecimal"
         android:minHeight="48dp"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/number_field1" />
