@@ -5,62 +5,60 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/resultText"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/montserrat_alternates"
-        android:text="@string/logo_text"
-        android:textColor="@color/black"
-        android:textSize="25sp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/logo"
+        android:textColor="#000000"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/number_field1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:ems="10"
-        android:hint="@string/hint1"
-        android:textColorHint="@color/hint"
-        android:inputType="numberDecimal"
-        android:minHeight="48dp"
-        android:textColor="@color/black"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="200dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resultText" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <EditText
-        android:id="@+id/number_field2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:ems="10"
-        android:hint="@string/hint1"
-        android:textColorHint="@color/hint"
-        android:inputType="numberDecimal"
-        android:minHeight="48dp"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/number_field1" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btnClick"
+            android:text="Кнопка 1" />
 
-    <Button
-        android:id="@+id/add_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:backgroundTint="@color/white"
-        android:text="Добавить числа"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/number_field2" />
+        <Button
+            android:id="@+id/button2"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:layout_weight="1"
+            android:backgroundTint="#AD1E1E"
+            android:text="Кнопка 2"
+            app:strokeWidth="2sp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btnClick"
+            android:text="Кнопка 2" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
